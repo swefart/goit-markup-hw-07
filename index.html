@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,6 +51,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="header-menu js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="header-menu-icon" width="32" height="22">
+            <use href="./img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -129,7 +140,8 @@
             <li class="works-item">
               <img
                 class="works-img"
-                src="./img/desktop.jpg"
+                src="./img/ourworks/desktop@1x.webp"
+                srcset="./img/ourworks/desktop@1x.webp 1x, ./img/ourworks/desktop@2x.webp 2x"
                 alt="Desktop applications"
                 width="360"
                 height="360"
@@ -138,7 +150,8 @@
             <li class="works-item">
               <img
                 class="works-img"
-                src="./img/mobile.jpg"
+                src="./img/ourworks/mobile@1x.webp"
+                srcset="./img/ourworks/mobile@1x.webp 1x, ./img/ourworks/mobile@2x.webp 2x"
                 alt="Mobile applications"
                 width="360"
                 height="360"
@@ -147,7 +160,8 @@
             <li class="works-item">
               <img
                 class="works-img"
-                src="./img/design.jpg"
+                src="./img/ourworks/design@1x.webp"
+                srcset="./img/ourworks/design@1x.webp 1x, ./img/ourworks/design@2x.webp 2x"
                 alt="Applications design"
                 width="360"
                 height="360"
@@ -164,7 +178,8 @@
             <li class="team-member">
               <img
                 class="team-photo"
-                src="./img/mark.jpg"
+                src="./img/team/mark@1x.webp"
+                srcset="./img/team/mark@1x.webp 1x, ./img/team/mark@2x.webp 2x"
                 alt="Smiling guy with beard"
                 width="264"
                 height="260"
@@ -223,7 +238,8 @@
             <li class="team-member">
               <img
                 class="team-photo"
-                src="./img/tom.jpg"
+                src="./img/team/tom@1x.webp"
+                srcset="./img/team/tom@1x.webp 1x, ./img/team/tom@2x.webp 2x"
                 alt="Smiling guy with fancy hairstyle"
                 width="264"
                 height="260"
@@ -282,7 +298,8 @@
             <li class="team-member">
               <img
                 class="team-photo"
-                src="./img/camila.jpg"
+                src="./img/team/camila@1x.webp"
+                srcset="./img/team/camila@1x.webp 1x, ./img/team/camila@2x.webp 2x"
                 alt="Shy lady with pink lipstick"
                 width="264"
                 height="260"
@@ -341,7 +358,8 @@
             <li class="team-member">
               <img
                 class="team-photo"
-                src="./img/daniel.jpg"
+                src="./img/team/daniel@1x.webp"
+                srcset="./img/team/daniel@1x.webp 1x, ./img/team/daniel@2x.webp 2x"
                 alt="Typical hipster"
                 width="264"
                 height="260"
@@ -400,6 +418,7 @@
           </ul>
         </div>
       </section>
+      <!-- Castomers section -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">Customers</h2>
@@ -554,7 +573,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- Modal form -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -641,7 +660,95 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </svg>
+      </button>
 
+      
+       <ul class="mobile-menu list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link mobile-current link" href="#">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-address-list list"> 
+            <li class="mobile-address-item">
+              <a class="mobile-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-address-item">
+              <a class="mobile-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+
+
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-box">
+              <a
+                class="mobile-social-link"
+                href="https://instagram.com"
+                rel="noopener noreferrer"
+                aria-label="instagram-link"
+              >
+                <svg class="mobile-social-link-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-social-box">
+              <a
+                class="mobile-social-link"
+                href="https://twitter.com"
+                rel="noopener noreferrer"
+                aria-label="twitter-link"
+              >
+                <svg class="mobile-social-link-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-social-box">
+              <a
+                class="mobile-social-link"
+                href="https://www.facebook.com"
+                rel="noopener noreferrer"
+                aria-label="facebook-link"
+              >
+                <svg class="mobile-social-link-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-social-box">
+              <a
+                class="mobile-social-link"
+                href="https://www.linkedin.com"
+                rel="noopener noreferrer"
+                aria-label="linkedin-link"
+              >
+                <svg class="mobile-social-link-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+    </div>
+
+     <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
