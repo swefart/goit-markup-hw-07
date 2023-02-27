@@ -605,15 +605,6 @@ img {
     padding-bottom: 120px;
   }
 
-  .section-title {
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-    letter-spacing: 0.02em;
-  }
-
   .works-list {
     display: flex;
     gap: 24px;
@@ -625,6 +616,14 @@ img {
   }
 }
 
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  letter-spacing: 0.02em;
+}
 /* =========================== /Our works ===========================*/
 
 /* =========================== Our team ===========================*/
